@@ -398,7 +398,7 @@ ul.pointsdv li p {
     }
 
 .ImageContainerDescription h4 {
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 700;
     color:var(--Theme-p-color)
 }
@@ -495,14 +495,15 @@ ul.pointsdv li p {
 .ContactsItem {
     line-height: 36px;
     color: var(--Theme-p-color);
+    font-size: var(--Theme-p-font-size);
 }
     .ContactsItem h1 {
-        font-size: 15px;
+        font-size: 1rem;
         margin: 0px;
         font-weight: 500;
     }
 .ContactDetails h2 {
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 41px;
 }
 .btnAppoinmentBooking {
