@@ -268,7 +268,7 @@ span.partialHead {
 
 .SubHead {
     font-weight: 300;
-    line-height: 51px;
+    line-height: 2.7rem;
     color: var(--Theme-p-color);
         font-size: 1.7rem;
 }
