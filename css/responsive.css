@@ -103,7 +103,10 @@ section.call-buton {
     top: 70px;
 }
 
- 
+ .section.call-buton
+ {
+    display: none;
+ }
 
     }
 
