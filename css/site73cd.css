@@ -148,6 +148,12 @@ body {
     width: 100%;
 }
 
+.carousel-indicators {
+  
+    margin-bottom: 0rem;
+   
+}
+
 .carousel-indicators [data-bs-target] {
     width: 32%;
 }
