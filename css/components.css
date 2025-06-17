@@ -1,8 +1,8 @@
 ﻿.call-buton .cc-calto-action-ripple {
-    z-index: 99999;
+    /* z-index: 99999;
     position: fixed;
     right: 62px;
-    bottom: 5rem;
+    bottom: 5rem; */
     background: #059f96; /* Teal */
     width: 4rem;
     height: 4rem;
@@ -24,7 +24,19 @@
     align-items: center;
     text-decoration: none;
 }
-
+span.material-symbols-outlined.callIcon {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    color: white;
+}
+section.call-buton {
+    width: 200px;
+    position: fixed;
+    right: 0px;
+    bottom: 70px;
+    z-index: 11;
+}
     .call-buton .cc-calto-action-ripple i {
         -webkit-transition: 0.3s ease;
         transition: 0.3s ease;
@@ -63,8 +75,8 @@
 span.num {
     position: absolute;
     color: #ffffff;
-    margin-left: -89%;
-    bottom: -49.5938px;
+    /* margin-left: -89%; */
+    /* bottom: -49.5938px; */
     font-weight: bold;
     background: #059f96;
     padding: 9px;
@@ -72,8 +84,9 @@ span.num {
     font-size: 13px;
     width: 141px;
     text-align: center;
+    left: -37px;
+    top: 76px;
 }
-
 
 /*Calender picker*/
 .datepicker td, .datepicker th {

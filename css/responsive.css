@@ -70,10 +70,7 @@
        
     }
 
-    span.num {
-        
-        margin-left: -140% ;
-    }
+ 
         .contacts_top {
         display: none;
     }
@@ -91,13 +88,16 @@
     {
         height:0px;
     }
-
-    .call-buton .cc-calto-action-ripple {
-   padding: 0.7rem;
-
-    width: 3rem;
-    height: 3rem;
-  }
+section.call-buton {
+    
+    right: -88px;
+  
+}
+  span.num {
+   
+    left: -45px;
+    top: 70px;
+}
 
     }
 
