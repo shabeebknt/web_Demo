@@ -38,6 +38,10 @@
     .P_About {
         width: 95%;
     }
+     html {
+    font-size: 15px;
+}
+}
 
 /* Medium devices (tablets, ≤768px) */
 @media (max-width: 768px) {
@@ -98,6 +102,8 @@ section.call-buton {
     left: -45px;
     top: 70px;
 }
+
+ 
 
     }
 

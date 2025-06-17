@@ -6,7 +6,7 @@
     --Content-Padding: 1% 7%;
     --Theme-p-color: #5c5c5c;
     --Theme-color-green: #059f96;
-    --Theme-p-font-size: 15px;
+    --Theme-p-font-size: 0.9rem;
 
 
 
@@ -16,6 +16,7 @@
 html
 {
     overflow-x:hidden !important;
+  
 }
 
 
@@ -136,6 +137,7 @@ body {
 #navbarScroll .nav-link {
     margin: 0px 4px;
     padding: 7px 12px;
+        font-size: 0.9rem;
 }
 
 #carouselExample .carousel-item::before {
@@ -307,7 +309,7 @@ ul.pointsdv {
         display: inline-block;
         width: 47%;
         font-weight: bold;
-        font-size: 14px;
+        font-size: var(--Theme-p-font-size);
         /* font-weight: 400; */
     }
 
@@ -382,6 +384,7 @@ ul.pointsdv li p {
     padding-top: 15px;
     text-align: justify;
     color: var(--Theme-p-color);
+    font-size: var(--Theme-p-font-size);
 }
 
 .ImageContainer {
