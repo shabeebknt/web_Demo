@@ -95,6 +95,7 @@
 section.call-buton {
     
     right: -88px;
+      display: none;
   
 }
   span.num {
@@ -103,10 +104,7 @@ section.call-buton {
     top: 70px;
 }
 
- .section.call-buton
- {
-    display: none;
- }
+ 
 
     }
 
