@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)file:///D:/Host/Index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="emotion-insertion-point" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - MyWebsite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Home Page - MyWebsite_files/css2" rel="stylesheet">
+    <link href="./Home Page - MyWebsite_files/css2(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./Home Page - MyWebsite_files/bootstrap.css">
+ 
+    <link href="file:///D:/Host/Home%20Page%20-%20MyWebsite_files/glightbox.min.css" rel="stylesheet">
+
+    <link href="./Home Page - MyWebsite_files/boostrapcustom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Home Page - MyWebsite_files/site.css">
+    <link href="./Home Page - MyWebsite_files/components.css" rel="stylesheet">
+    <link href="./Home Page - MyWebsite_files/responsive.css" rel="stylesheet">
+    <link href="./Home Page - MyWebsite_files/aos.css" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <section class="call-buton">
+        <a class="cc-calto-action-ripple" href="tel:+917025593559">
+            <span class="material-symbols-outlined">
+                call
+            </span><span class="num">+917025593559</span>
+        </a>
+    </section>
+
+
+    <div class="row Dashboard  ps-5">
+        <div class="col-md-8 item contacts_top">
+            <div class="callItem">
+                <a href="tel:+917025593559">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span> Call/Whats App 917025593559
+                </a>
+                <a class="ps-md-3">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span> Email medicity002@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 item text-center">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnBookAppoinment" class="btn btn-warning btnEnquiry">Book Appoinment</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Appoinment Booking</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form id="AppoinmentBooking">
+                    <div class="modal-body">
+                       
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="Name" placeholder="" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="MobileNumber" class="form-label">Mobile Number</label>
+                                <input type="text" class="form-control" id="MobileNumber" placeholder="" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="AppintmentDate" class="form-label">Date</label>
+                                <input type="text" class="form-control datepicker" readonly="readonly" id="AppintmentDate" placeholder="">
+                            </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-custom" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" id="btnAppoinmentBooking" class="btn btn-primary btn-custom  btn-submit">
+
+                                <span id="AppoinmentSpinnerSubmitText">Submit</span>
+                                <div class="spinner-border text-danger visually-hidden" role="status" id="AppoinmentSpinner">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                        </button>
+                        </div>
+
+                       
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid p-0">
+        <main role="main" class="pb-3">
+            <nav class="navbar navbar-expand-lg navbar-light  Header ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://localhost:7133/#">
+                        <img src="./Home Page - MyWebsite_files/logo.png" class="SiteLogo">
+                        <span>Medicenter</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mt-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://localhost:7133/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://localhost:7133/AboutUs">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://localhost:7133/Treatment">Our Treatments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://localhost:7133/Photogallery">Photo Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://localhost:7133/ContactUs" tabindex="-1" aria-disabled="true">Contact Us</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+            
+
+
+
+
+
+<div id="carouselExample" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class=""></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class=""></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block" src="./Home Page - MyWebsite_files/image2.jpg" alt="First slide">
+            <div class="carousel-custom-caption">
+                <h5 data-aos="fade-down" class="aos-init aos-animate">Smile Brighter, Live <br> Happier </h5>
+                <p data-aos="fade-down" class="aos-init aos-animate">Experience gentle, personalized  <br>treatment in a modern,  </p>
+            </div>
+
+        </div>
+        <div class="carousel-item">
+            <img class="d-block" src="./Home Page - MyWebsite_files/image1.jpg" alt="First slide">
+            <div class="carousel-custom-caption">
+                <h5 data-aos="fade-down" class="aos-init aos-animate">Advanced Dental <br> Solutions</h5>
+                <p data-aos="fade-down" class="aos-init aos-animate">Modern Technology for Healthy, <br> Beautiful Smiles </p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block" src="./Home Page - MyWebsite_files/image3.jpg" alt="First slide">
+            <div class="carousel-custom-caption">
+                <h5 data-aos="fade-down" class="aos-init aos-animate">Your Smile, Our <br> Passion </h5>
+                <p data-aos="fade-down" class="aos-init aos-animate">Experience gentle, personalized <br> treatment in a modern,  </p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#carouselExample" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselExample" type="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div data-aos="fade-up" class="row Maindv pt-3 pb-md-5 pt-md-5 pb-sm-0 aos-init aos-animate">
+    <div class="col-lg-6 leftdv pe-lg-5 ">
+
+        <div class="row">
+            <img data-aos="zoom-in" class="pt-md-5 aos-init aos-animate" src="./Home Page - MyWebsite_files/LeftImg2.jpg">
+        </div>
+
+    </div>
+    <div class="col-lg-6  rightdv pt-md-3 pt-md-0 pt-sm-3  pt-3">
+        <h1 data-aos="fade-down" data-aos-duration="2000" class="MainHeading aos-init aos-animate"><span class="partialHead">  Welcome to </span> Medicenter </h1>
+        <h2 data-aos="fade-in" class="SubHead aos-init aos-animate">Advanced Dental Solutions for Every Smile</h2>
+        <p data-aos="fade-in" class="Description aos-init aos-animate">
+            Welcome to Medicenter, where your smile matters. We provide gentle, professional dental care for the whole family, including regular check-ups, cleanings, fillings, braces, and cosmetic treatments. Our friendly team is here to make every visit comfortable and stress-free. Book your appointment today and keep your smile healthy and bright!
+
+        </p>
+
+
+        <ul class="pointsdv">
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Comprehensive Dental Care</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Experienced &amp; Caring Dentists</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Comfortable &amp; Friendly Environment</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Affordable Treatment Plans</p>
+            </li>
+
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Emergency Dental Services</p>
+            </li>
+
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Personalized Smile Makeovers</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Family-Friendly Dental Care</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">  check </span> <p>Strict Hygiene &amp; Safety Protocols</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="row Maindv">
+    <h2 data-aos="fade-down" class="SubHead text-center aos-init aos-animate">Our Dedicated Team of Medical Professionals</h2>
+
+    <section class="team-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div data-aos="fade-up" class="col-md-4 mb-4 aos-init aos-animate">
+                    <div class="card team-card text-center">
+                        <div class="card-body">
+                            <div class="profile-img-container">
+                                <img src="./Home Page - MyWebsite_files/doctor1.jpg">
+                           </div>
+                            <h5 class="card-title mt-3">Dr.Akhil</h5>
+                            <p class="card-text">ROOT CANAL SPECIALIST</p>
+                            <p class="card-text">FOUNDER &amp; CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-md-4 mb-4 aos-init aos-animate">
+                    <div class="card team-card text-center">
+                        <div class="card-body">
+                            <div class="profile-img-container">
+                                <img src="./Home Page - MyWebsite_files/doctor2.jpg">
+                            </div>
+                            <h5 class="card-title mt-3">Dr.Meenu</h5>
+                            <p class="card-text">ORTHODONTIST</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-md-4 mb-4 aos-init aos-animate">
+                    <div class="card team-card text-center">
+                        <div class="card-body">
+                            <div class="profile-img-container">
+                                <img src="./Home Page - MyWebsite_files/doctor3.jpg">
+                            </div>
+                            <h5 class="card-title mt-3">Dr.Anu</h5>
+                            <p class="card-text">DENTAL SURGEON</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+  
+<div class="BackImgdv">
+     
+    <div class="row">
+        <div class="container">
+            <h1 data-aos="zoom-in" class="aos-init">
+                Smile with Confidence Trusted Dental Care Designed to Keep You Comfortable and <br> Your Teeth Beautiful
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row welcome">
+    <div class="col-sm-4">
+        <h5 data-aos="zoom-in" class="aos-init">
+            We Value Your Family's<br>
+            Health and Your Time
+        </h5>
+    </div>
+    <div class="col-sm-8">
+        <p data-aos="zoom-in" class="aos-init">
+            Welcome to Medicenter a full-service diagnostic center and medical care clinic located on the north side of Chicago in the historic neighborhood. We provide fast effective and affordable treatment for non-life threatening illnesses and injuries that need attention right away by certified specialists.
+        </p>
+    </div>
+</div>
+
+
+
+
+<div class="ImageContainer">
+    <div class="row">
+
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+            <img src="./Home Page - MyWebsite_files/InvisalignTreatment_new.jpg">
+            <div class="ImageContainerDescription">
+                <h4>INVISALIGN TREATMENT</h4>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+            <img src="./Home Page - MyWebsite_files/DentalImplants_new.jpg">
+            <div class="ImageContainerDescription">
+                <h4>DENTAL IMPLANTS</h4>
+            </div>
+        </div>
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+            <img src="./Home Page - MyWebsite_files/RootCanalTreatment_new.jpg">
+            <div class="ImageContainerDescription BorderLeft BorderRight">
+                <h4>ROOT CANAL TREATMENT</h4>
+            </div>
+        </div>
+
+
+
+
+
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+            <img src="./Home Page - MyWebsite_files/GumTreatment.jpg">
+            <div class="ImageContainerDescription">
+                <h4>GUM TREATMENT</h4>
+            </div>
+        </div>
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+       <img src="./Home Page - MyWebsite_files/teathwhitening_new.jpg">
+            <div class="ImageContainerDescription">
+                <h4>TEETH WHITENING</h4>
+            </div>
+        </div>
+        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0 aos-init">
+            <img src="./Home Page - MyWebsite_files/tootheextraction_new.jpg">
+          
+            <div class="ImageContainerDescription">
+                <h4>TOOTH EXTRATION</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+            <div class="row ContactDetails pt-5 pe-0">
+                <div class="col-md-6">
+                    <h1 class="MainHeading LightHead">Contact Details</h1>
+
+
+                    <h2 data-aos="fade-up" data-aos-duration="2000" class="mt-5 LightHead aos-init">Medicenter Dental Clinic</h2>
+                    <div class="row">
+                        <div data-aos="fade-up" class="col-sm-6 ContactsItem aos-init">
+                            2702 Memory Lane, office 5<br>
+                            Chicago, IL 60605<br>
+                            admin@medicenter.com
+
+                            <h2 class="mt-5 LightHead2">In Case of Emergency Call +917025593559</h2>
+
+                        </div>
+                        <div data-aos="fade-up" class="col-sm-6 ContactsItem aos-init">
+                            <h1>  Hours of Operation</h1>
+                            Mon – Fri: 08:00 am – 05:00 pm<br>
+                            Sat: 09:00 am – 03:00 pm
+                        </div>
+                        <button data-aos="fade-up" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnBookAppoinment2" class="btn btn-warning btnAppoinmentBooking mb-2 aos-init">Book Appoinment</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-0 mt-5">
+
+                    <iframe src="./Home Page - MyWebsite_files/embed.html" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+
+    <script src="./Home Page - MyWebsite_files/jquery.min.js.download"></script>
+  
+    <script src="./Home Page - MyWebsite_files/bootstrap.bundle.min.js.download"></script>
+  
+    
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="./Home Page - MyWebsite_files/bootstrap-datepicker.min.css">
+
+    <!-- Bootstrap Datepicker JS -->
+    <script src="./Home Page - MyWebsite_files/bootstrap-datepicker.min.js.download"></script>
+
+    <link rel="stylesheet" href="./Home Page - MyWebsite_files/jquery-confirm.min.css">
+    <script src="./Home Page - MyWebsite_files/jquery-confirm.min.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/imagesloaded.pkgd.min.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/isotope.pkgd.min.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/aos.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/AppoinmentBooking.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/SendAppoinment.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/emailSender.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/site.js.download"></script>
+    <script src="./Home Page - MyWebsite_files/Appcommon.js.download"></script>
+    <script>
+              AOS.init({
+          duration: 1000 // sets default duration for all elements
+        });
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="./Home Page - MyWebsite_files/browserLink" async="async" id="__browserLink_initializationData" data-requestid="41e6bb6ba46d4d60a6c196f1ae2ad0e0" data-requestmappingfromserver="false" data-connecturl="http://localhost:51027/ab8796d5fd524bd4afbc133c253e752d/browserLink"></script>
+<!-- End Browser Link -->
+<script src="./Home Page - MyWebsite_files/aspnetcore-browser-refresh.js.download"></script>
+
+<div id="quick-start-container"></div></body></html>
