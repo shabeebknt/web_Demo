@@ -270,6 +270,7 @@ span.partialHead {
     font-weight: 300;
     line-height: 51px;
     color: var(--Theme-p-color);
+        font-size: 1.7rem;
 }
 
 .Maindv {
