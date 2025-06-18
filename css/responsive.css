@@ -136,7 +136,12 @@ section.call-buton {
     top: 70px;
 }
 
- 
+ .carousel-indicators {
+  
+    margin-bottom: 0rem;
+   
+}
+
 
     }
 
