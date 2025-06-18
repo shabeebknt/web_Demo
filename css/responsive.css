@@ -50,7 +50,7 @@
     position: absolute;
     background: #ffffff;
     width:215px;
-           height: 249px;
+           height: 314px;
     top: 88px;
     z-index: 999;
     right: 0px;
@@ -59,10 +59,11 @@
     padding-left: 0px;
 }
 #navbarScroll .nav-link {
-    margin: 0px 4px;
-    padding: 8px 10px;
-    font-size: 0.9rem;
-    border-bottom: solid #ccc7bd 1px;
+          margin: 0px 4px;
+        padding: 16px 10px;
+        font-size: 0.9rem;
+        border-bottom: solid #ccc7bd 1px;
+        font-weight: 600;
 }
 }
 
