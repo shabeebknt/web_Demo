@@ -20,9 +20,20 @@
     <link rel="stylesheet" href="css/site73cd.css?v=xZxSgMPdfv0GGgnHmQPK2Fx8oLPz3adkBpQ67o_of50" />
     <link href="css/components.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+      <link href="css/Rain.css" rel="stylesheet" />
     <link href="unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
+    
+       <div id="splash-screen">
+        <div class="sparkle-container"></div>
+        <div class="splash-content">
+            <h1>Bright Smile Dental</h1>
+            <p>Crafting confident smiles.</p>
+        </div>
+    </div>
     <section class="call-buton">
         <a class="cc-calto-action-ripple" href="tel:+917025593559">
            
@@ -438,5 +449,53 @@ stethoscope_check
 <!-- End Browser Link -->
 <script src="_framework/aspnetcore-browser-refresh.js"></script></body>
 
+    <script>
+        $(document).ready(function() {
+            
+            // --- Sparkle Generation Logic ---
+            const sparkleContainer = $('.sparkle-container');
+            const numSparkles = 150; // Adjust for more/less sparkles
+
+            for (let i = 0; i < numSparkles; i++) {
+                // Create a new sparkle element
+                let sparkle = $('<div class="sparkle"></div>');
+                
+                // Randomize properties to make the "rain" look natural
+                let size = Math.random() * 4 + 1; // Size: 1px to 5px
+                let left = Math.random() * 100;    // Horizontal position: 0% to 100%
+                let duration = Math.random() * 4 + 3; // Animation duration: 3s to 7s
+                let delay = Math.random() * 5;      // Animation delay: 0s to 5s
+
+                // Apply the randomized styles using jQuery's .css() method
+                sparkle.css({
+                    'width': size + 'px',
+                    'height': size + 'px',
+                    'left': left + 'vw',
+                    'animation-duration': duration + 's',
+                    'animation-delay': delay + 's'
+                });
+
+                // Add the sparkle to the container
+                sparkleContainer.append(sparkle);
+            }
+
+
+            // --- The 5-Second Timer ---
+            setTimeout(function() {
+                // Add the 'hidden' class to the splash screen to trigger the fade-out CSS transition
+                $('#splash-screen').addClass('hidden');
+
+                // Show the main content and trigger its fade-in animation
+                const mainContent = $('#main-content');
+                mainContent.css('display', 'block'); // Change display from 'none' to 'block'
+                
+                // A tiny delay ensures the display property is set before the opacity transition starts
+                setTimeout(function() {
+                    mainContent.addClass('visible');
+                }, 50);
+
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
 <!-- Mirrored from localhost:7133/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 17:43:04 GMT -->
 </html>
