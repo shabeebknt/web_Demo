@@ -41,6 +41,29 @@
      html {
     font-size: 15px;
 }
+
+#navbarScroll .navbar-nav .nav-link::after {
+  
+    margin: initial;
+}
+#navbarScroll {
+    position: absolute;
+    background: #ffffff;
+    width:215px;
+           height: 249px;
+    top: 88px;
+    z-index: 999;
+    right: 0px;
+}
+#navbarScroll ul {
+    padding-left: 0px;
+}
+#navbarScroll .nav-link {
+    margin: 0px 4px;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    border-bottom: solid #ccc7bd 1px;
+}
 }
 
 /* Medium devices (tablets, ≤768px) */
