@@ -747,11 +747,11 @@ ul.pointsdv li p {
 }
 
 .team-card {
-    border: none;
-    border-radius: 3px;
+  border: none;
+    border-radius: 0px;
     box-shadow: none;
     padding: 20px;
-    background-color: #fff;
+    background-color: #eceef3;
     transition: transform 0.3s ease-in-out;
     height: 334px;
 }
