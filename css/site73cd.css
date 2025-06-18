@@ -436,6 +436,7 @@ ul.pointsdv li p {
 
 .leftdv img {
     width: 100%;
+    opacity: 0.8 !important;
 }
 
 
