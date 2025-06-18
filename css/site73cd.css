@@ -101,6 +101,7 @@ body {
     background-color: var(--Header-background);
 }
 
+
 /*.Header::after {
         content: "";
         width: 116px;
@@ -122,6 +123,9 @@ body {
 .navbar-toggler:focus {
    
     box-shadow: none;
+}
+a.navbar-brand span {
+    font-size: 16px;
 }
 #navbarScroll ul {
     padding-left: 20%;
