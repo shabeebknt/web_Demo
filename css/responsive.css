@@ -75,6 +75,13 @@
     right: 20px;
   bottom: 74px;
 }
+
+.CallIconFixed {
+        right: 24px;
+        bottom: 132px;
+        display:block;
+    }
+
 }
 
 /* Medium devices (tablets, ≤768px) */

@@ -831,3 +831,18 @@ ul.pointsdv li p {
     right: 141px;
     z-index: 1000;
 }
+
+.CallIconFixed
+{
+     position: fixed;
+    bottom: 150px;
+    right: 141px;
+    z-index: 1000;
+    display: none;
+}
+
+.CallIconFixed img {
+    width: 42px;
+    border: solid white 3px;
+    border-radius: 50%;
+}
