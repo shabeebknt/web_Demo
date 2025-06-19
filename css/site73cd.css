@@ -114,10 +114,10 @@ body {
         transform: rotate(45deg);
     }*/
 .navbar-toggler {
-    border-radius: 50%;
+      border-radius: 1px;
     border: solid #e9e8e600 1px !important;
-    height: 56px;
-    width: 56px;
+    height: 45px;
+    width: 46px;
     background: #e9ebf6;
 }
 .navbar-toggler:focus {
