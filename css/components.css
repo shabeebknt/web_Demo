@@ -4,8 +4,8 @@
     right: 62px;
     bottom: 5rem; */
     background: #059f96; /* Teal */
-    width: 4rem;
-    height: 4rem;
+   width: 2rem;
+    height: 2rem;
     padding: 1.2rem;
     border-radius: 100%;
     -webkit-box-sizing: border-box;
@@ -25,10 +25,10 @@
     text-decoration: none;
 }
 span.material-symbols-outlined.callIcon {
-    position: absolute;
-    top: 20px;
-    left: 17px;
-    color: white;
+      position: absolute;
+    top: 8px;
+    left: 9px;
+    color: white
 }
 section.call-buton {
     width: 200px;
@@ -73,19 +73,19 @@ section.call-buton {
 }
 
 span.num {
-    position: absolute;
+  position: absolute;
     color: #ffffff;
     /* margin-left: -89%; */
     /* bottom: -49.5938px; */
     font-weight: bold;
     background: #059f96;
-    padding: 9px;
+    padding: 7px;
     border-radius: 2px;
-    font-size: 13px;
+    font-size: 11px;
     width: 141px;
     text-align: center;
-    left: -37px;
-    top: 76px;
+    left: -50px;
+    top: 50px;
 }
 
 /*Calender picker*/

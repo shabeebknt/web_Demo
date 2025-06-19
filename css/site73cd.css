@@ -826,9 +826,9 @@ ul.pointsdv li p {
 }
 
 .WhatsAppIconFixed {
-    position: fixed;
-    bottom: 150px;
-    right: 141px;
+      position: fixed;
+    bottom: 133px;
+    right: 153px;
     z-index: 1000;
 }
 

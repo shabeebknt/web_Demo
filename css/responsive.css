@@ -18,6 +18,12 @@
         font-size: 17px;
         margin-top: 52px;
     }
+    section.call-buton {
+    
+    right: -88px;
+      display: none;
+  
+}
     .BackImgdv h1 {
         font-size: 17px;
         line-height: 36px;
@@ -141,12 +147,7 @@
     {
         height:0px;
     }
-section.call-buton {
-    
-    right: -88px;
-      display: none;
-  
-}
+
   span.num {
    
     left: -45px;
