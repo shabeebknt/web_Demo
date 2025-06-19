@@ -824,3 +824,11 @@ ul.pointsdv li p {
 .custom-alert-content {
     font-size: 13px;
 }
+
+.WhatsAppIconFixed
+{
+        position: fixed;
+    bottom: 61px;
+    right: 20px;
+    z-index: 1000;
+}
