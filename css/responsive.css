@@ -65,6 +65,16 @@
         border-bottom: solid #ccc7bd 1px;
         font-weight: 500;
 }
+
+
+
+.WhatsAppIconFixed
+{
+   
+ 
+    right: 20px;
+  bottom: 74px;
+}
 }
 
 /* Medium devices (tablets, ≤768px) */
