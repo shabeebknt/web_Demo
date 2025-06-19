@@ -171,7 +171,7 @@
     }
 
     .carousel-custom-caption h5 {
-        font-size: 16px;
+        font-size: 13px;
         margin-top: 21px;
     }
     .BackImgdv h1 {
@@ -192,11 +192,11 @@
 
 @media (max-width: 380px) {
     .carousel-custom-caption h5 {
-        font-size: 12px;
+        font-size: 8px;
         margin-top: 29px;
     }
     .carousel-custom-caption p {
-        font-size: 12px;
+        font-size: 8px;
     }
     .carousel-indicators
     {
