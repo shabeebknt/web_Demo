@@ -692,6 +692,10 @@ ul.pointsdv li p {
         font-size: 14px;
         margin: 0 0 10px 0;
     }
+    .leftdv
+{
+    display: none;
+}
 }
 
 .portfolio .portfolio-item {
