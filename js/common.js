@@ -6,7 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/Home',
             views: {
                 'homeView': {
-                    templateUrl: 'Home.html',
+                    templateUrl: 'pages/Home.html',
                     controller: 'homeController'
                 }
             }
@@ -15,7 +15,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/AboutUs',
             views: {
                 'mainView': {
-                    templateUrl: 'AboutUs.html',
+                    templateUrl: 'pages/AboutUs.html',
                     controller: 'aboutUsController'
                 }
             }
@@ -24,7 +24,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/Treatment',
             views: {
                 'mainView': {
-                    templateUrl: 'Treatment.html',
+                    templateUrl: 'pages/Treatment.html',
                     controller: 'treatmentController'
                 }
             }
@@ -33,7 +33,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/Photogallery',
             views: {
                 'mainView': {
-                    templateUrl: 'Photogallery.html',
+                    templateUrl: 'pages/Photogallery.html',
                     controller: 'photoGalleryController'
                 }
             }
@@ -42,13 +42,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/ContactUs',
             views: {
                 'mainView': {
-                    templateUrl: 'ContactUs.html',
+                    templateUrl: 'pages/ContactUs.html',
                     controller: 'contactUsController'
                 }
             }
         });
  
-    $urlRouterProvider.otherwise('/AboutUs');
+    $urlRouterProvider.otherwise('pages/AboutUs');
 });
 
 app.controller('homeController', function($scope,$rootScope) {
