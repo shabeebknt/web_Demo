@@ -3,10 +3,10 @@ var app = angular.module('myApp', ['ui.router']);
 app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
-            url: '/Home',
+            url: '/',
             views: {
                 'homeView': {
-                    templateUrl: 'pages/Home.html',
+                    templateUrl: 'pages/home.html',
                     controller: 'homeController'
                 }
             }
@@ -48,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         });
  
-    $urlRouterProvider.otherwise('Home');
+    $urlRouterProvider.otherwise('index');
 });
 
 app.controller('homeController', function($scope,$rootScope) {
