@@ -48,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         });
  
-    $urlRouterProvider.otherwise('pages/AboutUs');
+    $urlRouterProvider.otherwise('Home');
 });
 
 app.controller('homeController', function($scope,$rootScope) {
