@@ -6,7 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/',
             views: {
                 'homeView': {
-                    templateUrl: 'pages/home.html',
+                    templateUrl: 'pages/Home.html',
                     controller: 'homeController'
                 }
             }
@@ -48,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         });
  
-    $urlRouterProvider.otherwise('');
+    $urlRouterProvider.otherwise('/');
 });
 
 
