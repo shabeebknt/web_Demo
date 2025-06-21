@@ -84,18 +84,19 @@ app.run(function($rootScope) {
 
 
   $rootScope.$on('$locationChangeStart', function(event, newUrl, oldUrl) {
-       
+       $('.navbar-collapse').removeClass('show');
   $("#loadingSpinner").removeClass("d-none");
+   
 
     });
 
     $rootScope.$on('$viewContentLoaded', function()
     {
-        console.log("Content loaded");
+    
      $("#loadingSpinner").addClass("d-none");
    
 
-        $('.navbar-collapse').removeClass('show');
+       
         Appcommon.InitAOS_d_1000();
         Appcommon.InitIsotope();
 
