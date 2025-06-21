@@ -81,26 +81,30 @@ app.controller('contactUsController', function($scope,$rootScope) {
 
 // Common function to run after view content is loaded
 app.run(function($rootScope) {
-    $rootScope.$on('$viewContentLoaded', function() 
+
+
+  $rootScope.$on('$locationChangeStart', function(event, newUrl, oldUrl) {
+       
+  $("#loadingSpinner").removeClass("d-none");
+
+    });
+
+    $rootScope.$on('$viewContentLoaded', function()
     {
-     
+        console.log("Content loaded");
+     $("#loadingSpinner").addClass("d-none");
+   
+
         $('.navbar-collapse').removeClass('show');
         Appcommon.InitAOS_d_1000();
         Appcommon.InitIsotope();
 
+
     });
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    // Attach a click event listener to all navigation links to show the loading spinner immediately.
+    // This handles cases where the state might not change, but the user expects visual feedback on click.
+  
 
     
 });
@@ -109,3 +113,4 @@ app.run(function($rootScope) {
 
 
 
+ 
