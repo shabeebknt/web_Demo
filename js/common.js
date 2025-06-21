@@ -48,8 +48,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         });
  
-    $urlRouterProvider.otherwise('index');
+    $urlRouterProvider.otherwise('');
 });
+
+
+
 
 app.controller('homeController', function($scope,$rootScope) {
     // Controller for Home.html
