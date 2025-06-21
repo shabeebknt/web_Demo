@@ -1,38 +1,60 @@
-var app = angular.module('myApp', ['ngRoute']);
-
-app.config(function($routeProvider) {
-    $routeProvider
-        .when('/Home', {
-            templateUrl: 'Home.html',
-            controller: 'homeController'
+var app = angular.module('myApp', ['ui.router']);
+ 
+app.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+        .state('home', {
+            url: '/Home',
+            views: {
+                'homeView': {
+                    templateUrl: 'Home.html',
+                    controller: 'homeController'
+                }
+            }
         })
-        .when('/AboutUs', {
-            templateUrl: 'AboutUs.html',
-            controller: 'aboutUsController'
+        .state('aboutUs', {
+            url: '/AboutUs',
+            views: {
+                'mainView': {
+                    templateUrl: 'AboutUs.html',
+                    controller: 'aboutUsController'
+                }
+            }
         })
-        .when('/Treatment', {
-            templateUrl: 'Treatment.html',
-            controller: 'treatmentController'
+        .state('treatment', {
+            url: '/Treatment',
+            views: {
+                'mainView': {
+                    templateUrl: 'Treatment.html',
+                    controller: 'treatmentController'
+                }
+            }
         })
-        .when('/Photogallery', {
-            templateUrl: 'Photogallery.html',
-            controller: 'photoGalleryController'
+        .state('photogallery', {
+            url: '/Photogallery',
+            views: {
+                'mainView': {
+                    templateUrl: 'Photogallery.html',
+                    controller: 'photoGalleryController'
+                }
+            }
         })
-        .when('/ContactUs', {
-            templateUrl: 'ContactUs.html',
-            controller: 'contactUsController'
-        })
-        .otherwise({
-            redirectTo: '/Home'
+        .state('contactUs', {
+            url: '/ContactUs',
+            views: {
+                'mainView': {
+                    templateUrl: 'ContactUs.html',
+                    controller: 'contactUsController'
+                }
+            }
         });
-
-       
+ 
+    $urlRouterProvider.otherwise('/AboutUs');
 });
 
 app.controller('homeController', function($scope,$rootScope) {
     // Controller for Home.html
-
-  
+ 
+   
 });
 
 app.controller('aboutUsController', function($scope,$rootScope) {
@@ -41,17 +63,17 @@ app.controller('aboutUsController', function($scope,$rootScope) {
     
 });
 
-app.controller('treatmentController', function($scope) {
-    // Controller for Treatment.html
+app.controller('treatmentController', function($scope,$rootScope) {
+   $rootScope.CurrentPage="Our Treatment";
 });
 
-app.controller('photoGalleryController', function($scope) {
-    // Controller for Photogallery.html
+app.controller('photoGalleryController', function($scope,$rootScope) {
+     $rootScope.CurrentPage="Photogallery";
 });
 
-app.controller('contactUsController', function($scope) {
+app.controller('contactUsController', function($scope,$rootScope) {
     // Controller for ContactUs.html
-    console.log('ContactUsController initialized');
+   $rootScope.CurrentPage="Contact uS";
 });
 
 // Common function to run after view content is loaded
@@ -59,6 +81,7 @@ app.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function() 
     {
      
+        
         Appcommon.InitAOS_d_1000();
         Appcommon.InitIsotope();
 

@@ -1,49 +1,38 @@
-document.addEventListener('DOMContentLoaded', function ()
-{
-    const contactForm = document.querySelector('#contactForm');
+$(document).on('submit', '#contactForm', async function (event) {
+    event.preventDefault();
+    debugger;
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function (event)
+    const submitButton = $('#contactUsSubmitButton');
+    const spinner = $('#contactUsSpinner');
+    const submitText = $('#contactUssubmitText');
+
+    submitButton.prop('disabled', true);
+    submitText.addClass('d-none');
+    spinner.removeClass('visually-hidden');
+
+    var response = await sendEmail(
+        'service_fotf2uh',
+        'template_qu001qo',
+        'HZlDXrhR3PqDqQJuW',
         {
-            event.preventDefault();
+            title: "test",
+            name: $('#name').val(),
+            message: $('#description').val(),
+            email: $('#email').val(),
+            phone: $('#phone').val()
+        }
+    );
 
-            const submitButton = document.getElementById('contactUsSubmitButton');
-            const spinner = document.getElementById('contactUsSpinner');
-            const submitText = document.getElementById('contactUssubmitText');
+    spinner.addClass('visually-hidden');
+    submitButton.prop('disabled', false);
+    submitText.removeClass('d-none');
 
-            submitButton.disabled = true;
-            submitText.classList.add('d-none');
-            spinner.classList.remove('visually-hidden');
-
-      
-
-            var response = await sendEmail(
-                'service_fotf2uh',
-                'template_qu001qo',
-                'HZlDXrhR3PqDqQJuW',
-                {
-                    title: "test",
-                    name: document.getElementById("name").value,
-                    message: document.getElementById("description").value,
-                    email: document.getElementById("email").value,
-                    phone: document.getElementById("phone").value
-                }
-            );
-
-            spinner.classList.add('visually-hidden');
-            submitButton.disabled = false;
-            submitText.classList.remove('d-none');
-
-            if (response.ok == true) {
-                $.alert({
-                    title: 'Success!',
-                    type: 'green',
-                    content: '<div class="custom-alert-content">Thank you! We will contact you shortly to confirm the details.</div>',
-                });
-                Appcommon.ClearForm(contactForm);
-            }
-
-
+    if (response.ok === true) {
+        $.alert({
+            title: 'Success!',
+            type: 'green',
+            content: '<div class="custom-alert-content">Thank you! We will contact you shortly to confirm the details.</div>',
         });
+        Appcommon.ClearForm(document.getElementById('contactForm'));
     }
 });
