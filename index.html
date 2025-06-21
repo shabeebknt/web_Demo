@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <!-- Mirrored from localhost:7133/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Jun 2025 17:42:51 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
@@ -25,7 +25,7 @@
 
 
 </head>
-<body>
+<body ng-app="myApp">
     
      <!-- <div id="splash-screen">
         <div class="sparkle-container"></div>
@@ -112,274 +112,40 @@ stethoscope_check
     </div>
     <div class="container-fluid p-0">
         <main role="main" class="pb-3">
-            <nav class="navbar navbar-expand-lg navbar-light  Header ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" class="SiteLogo" />
-                        <span>Medicenter</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mt-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="AboutUs.html">About Us</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="Treatment.html">Our Treatments</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Photogallery.html">Photo Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="ContactUs.html" tabindex="-1" aria-disabled="true">Contact Us</a>
-                            </li>
-                        </ul>
-                       
-                    </div>
-                </div>
-            </nav>
 
 
-
+            <div ng-include="'header.html'"></div>
 
 
             
+    
+    <div class="container-fluid p-0">
+      
 
-
-
-
-
-<div id="carouselExample" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+<div  class="PageContent pb-5 ">
+<div   class="PageHeader pb-5 pt-5">
+        <span class="h4 pe-3">  {{CurrentPage}}  </span>
+        <span class="pe-1 SecondHead">
+            HOME
+        </span>
+        <span class="material-symbols-outlined arrow ">
+            arrow_forward
+        </span>
+        <span class="pe-1 SecondHead">
+             {{CurrentPage}}
+        </span>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block" src="images/slides/image2.jpg" alt="First slide">
-            <div class="carousel-custom-caption">
-                <h5 data-aos="fade-down">Smile Brighter, Live <br /> Happier </h5>
-                <p data-aos="fade-down">Experience gentle, personalized  <br />treatment in a modern,  </p>
-            </div>
-
-        </div>
-        <div class="carousel-item">
-            <img class="d-block" src="images/slides/image1.jpg" alt="First slide">
-            <div class="carousel-custom-caption">
-                <h5 data-aos="fade-down">Advanced Dental <br /> Solutions</h5>
-                <p data-aos="fade-down">Modern Technology for Healthy, <br /> Beautiful Smiles </p>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <img class="d-block" src="images/slides/image3.jpg" alt="First slide">
-            <div class="carousel-custom-caption">
-                <h5 data-aos="fade-down">Your Smile, Our <br /> Passion </h5>
-                <p data-aos="fade-down">Experience gentle, personalized <br /> treatment in a modern,  </p>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" data-bs-target="#carouselExample" type="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" data-bs-target="#carouselExample" type="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+            
+           
+            <div ng-view></div>
+             </div>
+        
 </div>
 
-<div data-aos="fade-up" class="row Maindv pt-3 pb-md-5 pt-md-5  pb-sm-0">
-    <div class="col-lg-6 leftdv pe-lg-5 ">
+      
 
-        <div class="row">
-            <img data-aos="zoom-in" class="pt-md-5" src="images/LeftImg2.jpg" />
-        </div>
-
-    </div>
-    <div class="col-lg-6  rightdv pt-md-3 pt-md-0 pt-sm-3  pt-3">
-        <h1 data-aos="fade-down" data-aos-duration="2000" class="MainHeading"><span class="partialHead">  Welcome to </span> Medicenter </h1>
-        <h2 data-aos="fade-in" class="SubHead">Advanced Dental Solutions for Every Smile</h2>
-        <p data-aos="fade-in" class="Description">
-            Welcome to Medicenter, where your smile matters. We provide gentle, professional dental care for the whole family, including regular check-ups, cleanings, fillings, braces, and cosmetic treatments. Our friendly team is here to make every visit comfortable and stress-free. Book your appointment today and keep your smile healthy and bright!
-
-        </p>
-
-
-        <ul class="pointsdv">
-            <li >
-                <span class="material-symbols-outlined">  check </span> <p>Comprehensive Dental Care</p>
-            </li>
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Experienced & Caring Dentists</p>
-            </li>
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Comfortable & Friendly Environment</p>
-            </li>
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Affordable Treatment Plans</p>
-            </li>
-
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Emergency Dental Services</p>
-            </li>
-
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Personalized Smile Makeovers</p>
-            </li>
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Family-Friendly Dental Care</p>
-            </li>
-            <li>
-                <span class="material-symbols-outlined">  check </span> <p>Strict Hygiene & Safety Protocols</p>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-
-<div class="row Maindv">
-    <h2 data-aos="fade-down" class="SubHead text-center">Our Dedicated Team of Medical Professionals</h2>
-
-    <section class="team-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div data-aos="fade-up" class="col-md-4 mb-4">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="profile-img-container">
-                                <img src="images/doctors/doctor1.jpg" />
-                           </div>
-                            <h5 class="card-title mt-3">Dr.Akhil</h5>
-                            <p class="card-text">ROOT CANAL SPECIALIST</p>
-                            <p class="card-text">FOUNDER & CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="col-md-4 mb-4">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="profile-img-container">
-                                <img src="images/doctors/doctor2.jpg" />
-                            </div>
-                            <h5 class="card-title mt-3">Dr.Meenu</h5>
-                            <p class="card-text">ORTHODONTIST</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-up" class="col-md-4 mb-4">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="profile-img-container">
-                                <img src="images/doctors/doctor3.jpg" />
-                            </div>
-                            <h5 class="card-title mt-3">Dr.Anu</h5>
-                            <p class="card-text">DENTAL SURGEON</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-
-
-  
-<!-- <div class="BackImgdv">
-     
-    <div class="row">
-        <div class="container">
-            <h1 data-aos="zoom-in">
-                Smile with Confidence Trusted Dental Care Designed to Keep You Comfortable and <br /> Your Teeth Beautiful
-            </h1>
-        </div>
-    </div>
-</div> -->
-
-
-
-
-<div class="row welcome">
-    <div class="col-sm-4">
-        <h5 data-aos="zoom-in">
-            We Value Your Family's<br />
-            Health and Your Time
-        </h5>
-    </div>
-    <div class="col-sm-8">
-        <p data-aos="zoom-in">
-            Welcome to Medicenter a full-service diagnostic center and medical care clinic located on the north side of Chicago in the historic neighborhood. We provide fast effective and affordable treatment for non-life threatening illnesses and injuries that need attention right away by certified specialists.
-        </p>
-    </div>
-</div>
-
-
-
-
-<div class="ImageContainer">
-    <div class="row">
-
-        <div data-aos="zoom-in" class="col-lg-4 col-md-6  p-0">
-            <img src="images/Treatments/InvisalignTreatment_new.jpg" />
-            <div class="ImageContainerDescription">
-                <h4>INVISALIGN TREATMENT</h4>
-            </div>
-        </div>
-
-        <div data-aos="zoom-in" class="col-lg-4 col-md-6 p-0">
-            <img src="images/Treatments/DentalImplants_new.jpg" />
-            <div class="ImageContainerDescription">
-                <h4>DENTAL IMPLANTS</h4>
-            </div>
-        </div>
-        <div data-aos="zoom-in" class="col-lg-4  col-md-6  p-0">
-            <img src="images/Treatments/RootCanalTreatment_new.jpg" />
-            <div class="ImageContainerDescription BorderLeft BorderRight">
-                <h4>ROOT CANAL TREATMENT</h4>
-            </div>
-        </div>
-
-
-
-
-
-        <div data-aos="zoom-in" class="col-lg-4  col-md-6  p-0">
-            <img src="images/Treatments/GumTreatment.jpg" />
-            <div class="ImageContainerDescription">
-                <h4>GUM TREATMENT</h4>
-            </div>
-        </div>
-        <div data-aos="zoom-in" class="col-lg-4  col-md-6  p-0">
-       <img src="images/Treatments/teathwhitening_new.jpg" />
-            <div class="ImageContainerDescription">
-                <h4>TEETH WHITENING</h4>
-            </div>
-        </div>
-        <div data-aos="zoom-in" class="col-lg-4  col-md-6  p-0">
-            <img src="images/Treatments/tootheextraction_new.jpg" />
-          
-            <div class="ImageContainerDescription">
-                <h4>TOOTH EXTRATION</h4>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-
-
-            <div class="row ContactDetails pt-5 ">
+            
+            <div class="row ContactDetails pt-5 pe-0">
                 <div class="col-md-6">
                     <h1 class="MainHeading LightHead">Contact Details</h1>
 
@@ -403,18 +169,19 @@ stethoscope_check
                     </div>
                 </div>
 
-                <div class="col-md-6 mt-5">
+                <div class="col-md-6 p-0 mt-5">
 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708161.6969138371!2d75.89663306651394!3d11.329035701027262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba62383af861be3%3A0x4b730477218eaf4f!2sNilambur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1747666271765!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
             </div>
-
-
+ 
         </main>
     </div>
-
-
+ 
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
   
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -422,7 +189,7 @@ stethoscope_check
     
     <!-- Bootstrap Datepicker CSS -->
     <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-
+ 
     <!-- Bootstrap Datepicker JS -->
       <script src="cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css">
@@ -435,11 +202,8 @@ stethoscope_check
     <script src="js/EmailJs/emailSender.js"></script>
     <script src="js/sitee972.js?v=427Emmy81nZLKoTIzCZKuRCC-WgmPnLSKfjw5XDWhYE"></script>
     <script src="js/Appcommon.js"></script>
-    <script>
-              AOS.init({
-          duration: 1000 // sets default duration for all elements
-        });
-    </script>
+    <script src="js/common.js"></script>
+   
 
 <!-- Visual Studio Browser Link -->
 <script type="text/javascript" src="_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="416790035bd44d3cb702a6d2cba5c7c3" data-requestMappingFromServer="false" data-connectUrl="http://localhost:51027/ab8796d5fd524bd4afbc133c253e752d/browserLink"></script>
@@ -505,4 +269,9 @@ stethoscope_check
   <a href="tel:+917025593559" target="_blank" class="CallIconFixed">
     <img src="images/Icons/telephone.png" alt="WhatsApp" width="50">
   </a>
+
+  
+ <link href="lib/glightbox/glightbox.min.html" rel="stylesheet" />
+ <script src="lib/photogallery/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/photogallery/isotope.pkgd.min.js"></script>
 </html>
