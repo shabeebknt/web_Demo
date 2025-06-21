@@ -81,7 +81,7 @@ app.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function() 
     {
      
-        
+        $('.navbar-collapse').removeClass('show');
         Appcommon.InitAOS_d_1000();
         Appcommon.InitIsotope();
 
